@@ -1,0 +1,1539 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>a3</title></head><body><article class="markdown-body"><h1 id="assignment-3-engg1111"><a name="user-content-assignment-3-engg1111" href="#assignment-3-engg1111" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Assignment 3, ENGG1111</h1>
+<p>Updated on Nov. 22</p>
+<p>If you have any questions regarding this assignment, please post to the Moodle discussion forum.</p>
+<h1 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introduction</h1>
+<p>Read the instructions in this document carefully.</p>
+<p>In this assignment you will solve four tasks and, as in Assignments 1 and 2, you will use a tester <code>test.cpp</code> to test your code. The tester employs a small number of test cases. Note that we will use additional test cases when marking your assignment submission.</p>
+<p>In all test case examples shown in this worksheet, user input is shown in <font color="blue">blue</font>.</p>
+<p>The code for this assignment consists of several files and folders. You should only edit certain files, others should NOT be edited.</p>
+<p>The standard libraries that you would need for your programs have been included for you in the program files.  You are NOT allowed to include other external libraries in your programs.  </p>
+<h2 id="files-you-will-edit-compile-and-run"><a name="user-content-files-you-will-edit-compile-and-run" href="#files-you-will-edit-compile-and-run" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Files you will <em>edit</em>, <em>compile</em> and <em>run</em>:</h2>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.cpp</code></td>
+<td>Task 1</td>
+</tr>
+<tr>
+<td><code>2.cpp</code></td>
+<td>Task 2</td>
+</tr>
+<tr>
+<td><code>3.cpp</code></td>
+<td>Task 3</td>
+</tr>
+<tr>
+<td><code>4.cpp</code></td>
+<td>Task 4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="files-you-will-compile-and-run"><a name="user-content-files-you-will-compile-and-run" href="#files-you-will-compile-and-run" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Files you will <em>compile</em> and <em>run</em>:</h2>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>test.cpp</code></td>
+<td>Tester</td>
+</tr>
+</tbody>
+</table>
+<h2 id="folders"><a name="user-content-folders" href="#folders" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Folders</h2>
+<p>There are three folders. Do not edit any files in these folders. The tester may not work correctly if you edit any files in these folders.</p>
+<table>
+<thead>
+<tr>
+<th>Folder name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>expectedOutput</code></td>
+<td>Expected output files</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>Input files for test cases</td>
+</tr>
+<tr>
+<td><code>yourOutput</code></td>
+<td>Output files produced by your program</td>
+</tr>
+</tbody>
+</table>
+<h2 id="submission"><a name="user-content-submission" href="#submission" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Submission</h2>
+<p>Zip the files <code>1.cpp</code>, <code>2.cpp</code>, &hellip;, <code>4.cpp</code> to the file <code>submit.zip</code> and upload the zip file to Moodle before the deadline. <strong>Do not submit any other files.</strong> Make sure you zip only those 4 source files. There should only be the 4 files named above in the zip archive. Please check carefully that you have submitted the correct files. We suggest you download your submitted zip file, extract the programs, and check again for correctness. Do not submit any other files from <code>A3.zip</code>. <strong>You will receive 0 marks for this assignment if you submit incorrect files.</strong> Resubmission after the deadline is not allowed.</p>
+<h2 id="deadline"><a name="user-content-deadline" href="#deadline" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Deadline</h2>
+<p>The deadline is 23:55 Dec 6. <strong>No late submission will be accepted.</strong></p>
+<h2 id="late-submission"><a name="user-content-late-submission" href="#late-submission" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Late Submission</h2>
+<p>You will receive 0 marks if you submit after the deadline.</p>
+<h2 id="wrong-submission"><a name="user-content-wrong-submission" href="#wrong-submission" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Wrong Submission</h2>
+<p>You will receive 0 marks if you submit incorrect files.</p>
+<h2 id="evaluation"><a name="user-content-evaluation" href="#evaluation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Evaluation</h2>
+<p>Your code will be tested for technical correctness. Please do not edit any provided code in <code>test.cpp</code> and do not edit any files in the folders, or you may wreak havoc on the tester. However, the correctness of your implementation &ndash; not the tester&rsquo;s judgments &ndash; will be the final judge of your score. If necessary, we will review your work individually to ensure that you receive due credit for your work.</p>
+<h2 id="academic-dishonesty"><a name="user-content-academic-dishonesty" href="#academic-dishonesty" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Academic Dishonesty</h2>
+<p>We will be checking your code against other submissions in the class and from the Internet for logical redundancy. If you copy someone else&rsquo;s code and submit it with minor changes, we will know. We trust you all to submit your own work only; please don&rsquo;t let us down. If you do, we will pursue the strongest consequences available to us.</p>
+<h2 id="discussion-forum"><a name="user-content-discussion-forum" href="#discussion-forum" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Discussion Forum</h2>
+<p>If you find yourself stuck on something, post your question to the course forum. Please be careful not to post spoilers. Please don&rsquo;t post any code that is directly related to the assignments. However you are welcome and encouraged to discuss general ideas on the discussion forums. If you have any questions about this assignment you should post them in the discussion forums.</p>
+<h1 id="task-1"><a name="user-content-task-1" href="#task-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Task 1</h1>
+<p>Available marks: 20/100</p>
+<p>A binary number is a base-2 number composed of the binary digits (bits) 0 and 1.  For example, the binary numbers 1, 10, 11, 111 are of decimal values 1, 2, 3, 7, respectively.  Addition of two binary digits follow the rules of 0+0=0, 0+1=1, 1+0=1 and 1+1=10.  The sum of two binary numbers can then be obtained in the same way as we add two decimal numbers, i.e., starting from the least significant place, we add the corresponding digits of the two numbers and propagate any carry digit to the next, more significant place. The following two figures illustrate the addition for decimal numbers and for binary numbers.  Note that the carry bit for binary addition can only be 0 or 1.</p>
+<p><img alt="alt text" src="addition.png" title="Decimal/Binary addition" /></p>
+<p>In <code>1.cpp</code>, write a C++ program that reads two strings, each representing a binary number, supplied by the user.  The input strings are therefore binary strings containing a sequence of 0&rsquo;s and 1&rsquo;s. Your program should output the sum of the two binary numbers.  You may assume that the input numbers, if nonzero, always start with a <code>1</code>. This is the same for the output sum, i.e., a nonzero sum should always start with a <code>1</code>.  You should NOT make any assumption to the maximum length of the input binary strings (i.e., the input strings can be as long as what a <code>string</code> object in C++ can be.)</p>
+<h2 id="test-cases"><a name="user-content-test-cases" href="#test-cases" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Test Cases</h2>
+<p>1_1</p>
+<pre>
+<font color="blue">10101010
+11001100</font>
+101110110
+</pre>
+
+<p>1_2</p>
+<pre>
+<font color="blue">11111
+1</font>
+100000
+</pre>
+
+<p>1_3</p>
+<pre>
+<font color="blue">0
+0</font>
+0
+</pre>
+
+<p>1_4</p>
+<pre>
+<font color="blue">10001
+11</font>
+10100
+</pre>
+
+<p>1_5</p>
+<pre>
+<font color="blue">110001110001001010100111011101100101001011010111
+10111000100110001010001000110110010111000001111</font>
+1001000110101111011111000100100011000000011100110
+</pre>
+
+<h1 id="task-2"><a name="user-content-task-2" href="#task-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Task 2</h1>
+<p>Available marks: 25/100</p>
+<p>Two strings are anagrams of each other if one can be formed by rearranging the letters of the other (excluding spaces).  For example, <code>silent</code> is an anagram of <code>listen</code>, and <code>anagrams</code> is an anagram of <code>ars magna</code>.</p>
+<p>In <code>2.cpp</code>, write a C++ program that reads in two strings <code>s</code> and <code>t</code>, and finds the positions of all anagrams of the second string <code>t</code> in the first string <code>s</code>.</p>
+<p>For the input, you may assume that:</p>
+<ul>
+<li>both input strings are not empty</li>
+<li>the first string <code>s</code> contains letters in lower case and possibly some spaces in between the letters; however, <code>s</code> does not have any leading or trailing spaces</li>
+<li>the second string <code>t</code> contains lower case letters only and does not contain any spaces</li>
+</ul>
+<p>For the output:</p>
+<ul>
+<li>each line should contain two numbers <code>i j</code>, so that the substring <code>s[i]..s[j]</code> of <code>s</code> is an anagram of <code>t</code>.  Note that while the substring <code>s[i]..s[j]</code> may contain spaces in between the letters, it should not contain any leading or trailing spaces</li>
+<li>the output should be sorted by the starting position <code>i</code> of the identified anagram <code>s[i]..s[j]</code></li>
+</ul>
+<h2 id="test-cases_1"><a name="user-content-test-cases_1" href="#test-cases_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Test Cases</h2>
+<p>2_1</p>
+<pre>
+<font color="blue">dirty room
+dormitory</font>
+0 9
+</pre>
+
+<p>2_2</p>
+<pre>
+<font color="blue">anagram fun
+farm</font>
+4 8
+</pre>
+
+<p>2_3</p>
+<pre>
+<font color="blue">program fun
+gun</font>
+
+</pre>
+
+<p>2_4</p>
+<pre>
+<font color="blue">washes
+cashews</font>
+
+</pre>
+
+<p>2_5</p>
+<pre>
+<font color="blue">abade abc
+dea</font>
+2 4
+3 6
+</pre>
+
+<p>2_6</p>
+<pre>
+<font color="blue">aa aaa a aa
+aaaa</font>
+0 4
+1 5
+3 7
+4 9
+5 10
+</pre>
+
+<p>2_7</p>
+<pre>
+<font color="blue">aa  aa  aaa a aa
+aaaa</font>
+0 5
+1 8
+4 9
+5 10
+8 12
+9 14
+10 15
+</pre>
+
+<h1 id="task-3"><a name="user-content-task-3" href="#task-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Task 3</h1>
+<p>Available marks: 25/100</p>
+<p>In <code>3.cpp</code>, write a C++ program that reads in a list of circles in the 2D plane supplied by the user and reports circles that intersect. The first line of input is the number of circles <code>N</code>, which is followed by <code>N</code> lines, each containing the information of a circle.  Each circle is input in the form <code>tag x y r</code>, where <code>tag</code> gives the name of the circle, <code>x</code> and <code>y</code> are the x, y-coordinates of the centre and <code>r</code> is the radius of the circle.  Note that</p>
+<ul>
+<li>The number of circles <code>N</code> is a non-negative integer.  You may assume that the integer can be represented as an <code>int</code>. Apart from that, you should NOT assume any limit to the value of <code>N</code>.</li>
+<li>The name <code>tag</code> of a circle does not contain any spaces.</li>
+<li>The radius <code>r</code> of a circle is a non-negative number, i.e., we allow a circle to have zero radius in which case the circle is reduced to a point.</li>
+</ul>
+<p>A circle is defined as the set of points which are of equal distance (radius) from a given point (center).  Two circles are said to intersect if they share common points.  The figure below shows some cases of intersecting circles and non-intersecting circles.  Here, circles A and B intersect, circles C and D intersect, circles P and Q are non-intersecting, circles R and S are non-intersecting.</p>
+<p><img alt="alt text" src="circles.png" title="Circle intersection" /></p>
+<p><strong>Two non-intersecting circles must satisfy either d &gt; r<sub>1</sub> + r<sub>2</sub> or d &lt; | r<sub>1</sub> - r<sub>2</sub> |</strong>, where r<sub>1</sub> and r<sub>2</sub> are the radii of the two circles and d is the distance between the centres of the two circles. To get rid of the square root computation in calculating d, we may take squares on both sides of the two inequalities and we have</p>
+<ol>
+<li>d<sup>2</sup> &gt; (r<sub>1</sub> + r<sub>2</sub>)<sup>2</sup> </li>
+<li>d<sup>2</sup> &lt; (r<sub>1</sub> - r<sub>2</sub>)<sup>2</sup></li>
+</ol>
+<p>By checking against the above two inequalities, we may tell whether two given circles intersect or not.  (The first condition corresponds to the case in which two circles are non-intersecting and one does not contain another; the second condition corresponds to the case in which two circles are non-intersecting and one lies entirely within another.)</p>
+<p>For each input circle C, your program should report all other circles that intersect with it in the following output formats:</p>
+<ul>
+<li>Each output line starts with the tag of an input circle C (let&rsquo;s call this the query circle), followed by a colon <code>:</code>, and then a list of tags of the circles that intersect with C.</li>
+<li>The query circles and their corresponding lists of intersecting circles should be output in the same order as they were input.</li>
+</ul>
+<p><strong>Special requirements:</strong></p>
+<ul>
+<li>Two <code>struct</code> definitions, <code>Point</code> and <code>Circle</code> have been provided to you in <code>3.cpp</code>. You are required to use these <code>struct</code> definitions to store the input circles, and you must NOT modify in any way these <code>struct</code> definitions.</li>
+<li>You must use the above two square-root-free conditions to check for circle intersection.  </li>
+<li><strong>If your program does not satisfy any of these requirements, you will get 0 marks for this task.</strong></li>
+</ul>
+<h2 id="test-cases_2"><a name="user-content-test-cases_2" href="#test-cases_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Test Cases</h2>
+<p>3_1</p>
+<pre>
+<font color="blue">0</font>
+
+</pre>
+
+<p>3_2</p>
+<pre>
+<font color="blue">1
+lonely -5 3.5 23.4</font>
+lonely:
+</pre>
+
+<p>3_3</p>
+<pre>
+<font color="blue">2
+c1 0 0 1
+c2 1 0 0.5</font>
+c1: c2
+c2: c1
+</pre>
+
+<p>3_4</p>
+<pre>
+<font color="blue">2
+A 0 0 1
+B 1 1.5 0.5</font>
+A:
+B:
+</pre>
+
+<p>3_5</p>
+<pre>
+<font color="blue">3
+Eric -2.8 3 3.2
+Kyle 1 0 1
+Kenny -1 -3.4 5.2</font>
+Eric: Kenny
+Kyle:
+Kenny: Eric
+</pre>
+
+<p>3_6</p>
+<pre>
+<font color="blue">5
+red 2 0 0
+blue -1 0 1
+green 1 0 1
+yellow 0.2 0 0
+black 0.2 0 0</font>
+red: green
+blue: green
+green: red blue
+yellow: black
+black: yellow
+</pre>
+
+<p>3_7</p>
+<pre>
+<font color="blue">5
+Articuno -102.2 300.5 258.6
+Zapdos -102.2 300.5 258.6
+Moltres -102.2 300.5 258.6
+Mewtwo -102.2 300.5 258.6
+Mew -102.2 300.5 258.6</font>
+Articuno: Zapdos Moltres Mewtwo Mew
+Zapdos: Articuno Moltres Mewtwo Mew
+Moltres: Articuno Zapdos Mewtwo Mew
+Mewtwo: Articuno Zapdos Moltres Mew
+Mew: Articuno Zapdos Moltres Mewtwo
+</pre>
+
+<h1 id="task-4"><a name="user-content-task-4" href="#task-4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Task 4</h1>
+<p>Available marks: 30/100</p>
+<p>In <code>4.cpp</code>, write a C++ program that formats an input text file so that each line contains exactly <code>M</code> characters and is left and right justified.  The input file name <code>&lt;inputFileName&gt;.txt</code> and the number <code>M</code> are supplied by the user.  You program should output the formatted text to an output file named <code>&lt;inputFileName&gt;_formatted.txt</code>.  For example, if the input is:</p>
+<pre>
+text.txt
+20
+</pre>
+
+<p>and <code>text.txt</code> contains</p>
+<pre>If you are interested in stories with happy endings, you
+would be better off reading some other book.
+</pre>
+
+<p>then the output file <code>text_formatted.txt</code> should contain</p>
+<pre>01234567890123456789
+If      you      are        
+interested        in
+stories  with  happy
+endings,  you  would
+be     better    off
+reading  some  other
+book.
+</pre>
+
+<ul>
+<li>The first line of the output file contains a column ruler of width <code>M</code> which is formed by runs of digits from <code>0</code> to <code>9</code></li>
+<li>The spaces allocated to each word separation should be as even as possible; when it is not possible to assign the same number of spaces to all separation, the first few separation will get more spaces assigned.  For example, if a line should contain 6 spaces and there are 4 word separation, each separation from left to right should take 2, 2, 1, 1 spaces, respectively.</li>
+<li>If a word has length longer than <code>M</code>, it will occupy a line on its own.</li>
+<li>The last line should remain left justified only.</li>
+</ul>
+<p>Note that </p>
+<ul>
+<li>You should NOT make any assumption about the number of lines in the input file.</li>
+<li>The output file will combine all paragraphs of text in the input file; therefore, it contains only one paragraph of text.</li>
+<li>Your program should also report (as screen output) the number of formatted lines that have been written to the output file.</li>
+<li><strong>The user may specify the input file from another folder, e.g., <code>input/text.txt</code> in the <code>input</code> folder, but your program should always save the output text file in the <code>yourOutput</code> directory. See the examples in the test cases below</strong>.  </li>
+</ul>
+<h2 id="test-cases_3"><a name="user-content-test-cases_3" href="#test-cases_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Test Cases</h2>
+<p>You may find the input text files for the text cases in the <code>input</code> folder.</p>
+<p>4_1</p>
+<pre>
+<font color="blue">input/text_1.txt
+16</font>
+0 formatted lines written to yourOutput/text_1_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_1.txt</code></th>
+<th>contents of <code>text_1_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre></pre></td>
+<td><pre>0123456789012345</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_2</p>
+<pre>
+<font color="blue">input/text_2.txt
+14</font>
+1 formatted lines written to yourOutput/text_2_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_2.txt</code></th>
+<th>contents of <code>text_2_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>Masterpiece</pre></td>
+<td><pre>01234567890123<br>Masterpiece</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_3</p>
+<pre>
+<font color="blue">input/text_3.txt
+16</font>
+7 formatted lines written to yourOutput/text_3_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_3.txt</code></th>
+<th>contents of <code>text_3_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>This is because not very many happy things happened<br>in the lives of the three Baudelaire youngsters.</pre></td>
+<td><pre>0123456789012345<br>This  is because<br>not   very  many<br>happy     things<br>happened  in the<br>lives   of   the<br>three Baudelaire<br>youngsters.</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_4</p>
+<pre>
+<font color="blue">input/text_4.txt
+8</font>
+13 formatted lines written to yourOutput/text_4_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_4.txt</code></th>
+<th>contents of <code>text_4_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>This is because not very many happy things happened<br>in the lives of the three Baudelaire youngsters.</pre></td>
+<td><pre>01234567<br>This  is<br>because<br>not very<br>many<br>happy<br>things<br>happened<br>in   the<br>lives of<br>the<br>three<br>Baudelaire<br>youngsters.</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_5</p>
+<pre>
+<font color="blue">input/text_5.txt
+34</font>
+4 formatted lines written to yourOutput/text_5_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_5.txt</code></th>
+<th>contents of <code>text_5_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>This is because not very many happy things happened<br>in the lives of the three Baudelaire youngsters.</pre></td>
+<td><pre>0123456789012345678901234567890123<br>This  is  because  not  very  many<br>happy things happened in the lives<br>of     the     three    Baudelaire<br>youngsters.</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_6</p>
+<pre>
+<font color="blue">input/text_6.txt
+40</font>
+17 formatted lines written to yourOutput/text_6_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_6.txt</code></th>
+<th>contents of <code>text_6_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>But one   type of book that practically  no<br>one likes to read     is a  book about the law.<br>Books about the law are notorious for being very long,<br>very dull, and very difficult to read.<br>This is one reason many lawyers make heaps of<br>money. The money is an    incentive-the word<br>&ldquo;incentive&rdquo; here means   &ldquo;an offered reward to<br>persuade you to do something you don&rsquo;t want<br>to do&rdquo;-to read long, dull, and difficult books.<br><br>The Baudelaire children had a slightly<br>different incentive for reading these books,<br>of course. Their incentive was not heaps of<br>money, but preventing    Count Olaf     from doing<br>something horrible to them in<br>order to   get heaps of    money.</pre></td>
+<td><pre>0123456789012345678901234567890123456789<br>But one type of book that practically no<br>one  likes  to  read is a book about the<br>law.  Books  about the law are notorious<br>for being very long, very dull, and very<br>difficult  to  read.  This is one reason<br>many  lawyers  make  heaps of money. The<br>money    is    an   incentive-the   word<br>&ldquo;incentive&rdquo;   here   means  &ldquo;an  offered<br>reward  to  persuade you to do something<br>you  don&rsquo;t  want  to  do&rdquo;-to  read long,<br>dull,    and    difficult   books.   The<br>Baudelaire   children   had  a  slightly<br>different  incentive  for  reading these<br>books,  of  course.  Their incentive was<br>not heaps of money, but preventing Count<br>Olaf  from  doing  something horrible to<br>them in order to get heaps of money.</pre></td>
+</tr>
+</tbody>
+</table>
+<p>4_7</p>
+<pre>
+<font color="blue">input/text_7.txt
+61</font>
+11 formatted lines written to yourOutput/text_7_formatted.txt
+</pre>
+
+<table>
+<thead>
+<tr>
+<th>contents of <code>text_7.txt</code></th>
+<th>contents of <code>text_7_formatted.txt</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><pre>But one   type of book that practically  no<br>one likes to read     is a  book about the law.<br>Books about the law are notorious for being very long,<br>very dull, and very difficult to read.<br>This is one reason many lawyers make heaps of<br>money. The money is an    incentive-the word<br>&ldquo;incentive&rdquo; here means   &ldquo;an offered reward to<br>persuade you to do something you don&rsquo;t want<br>to do&rdquo;-to read long, dull, and difficult books.<br><br>The Baudelaire children had a slightly<br>different incentive for reading these books,<br>of course. Their incentive was not heaps of<br>money, but preventing    Count Olaf     from doing<br>something horrible to them in<br>order to   get heaps of    money.</pre></td>
+<td><pre>0123456789012345678901234567890123456789012345678901234567890<br>But one type of book that practically no one likes to read is<br>a  book  about the law. Books about the law are notorious for<br>being  very long, very dull, and very difficult to read. This<br>is  one reason many lawyers make heaps of money. The money is<br>an  incentive-the  word  &ldquo;incentive&rdquo;  here  means &ldquo;an offered<br>reward  to  persuade  you  to  do something you don&rsquo;t want to<br>do&rdquo;-to  read  long, dull, and difficult books. The Baudelaire<br>children had a slightly different incentive for reading these<br>books, of course. Their incentive was not heaps of money, but<br>preventing  Count  Olaf from doing something horrible to them<br>in order to get heaps of money.</pre></td>
+</tr>
+</tbody>
+</table>
+<p>Once you are done with the assignment, you may open <code>test.cpp</code>, press <code>F6</code> and enter <code>0</code> to run all test cases. After submitting your assignment, check it by downloading it yourself. Unzip the archive in our development environment and run the tester again to make sure all test cases pass:</p>
+<pre><code class="text">1_1: PASSED
+1_2: PASSED
+1_3: PASSED
+1_4: PASSED
+1_5: PASSED
+
+2_1: PASSED
+2_2: PASSED
+2_3: PASSED
+2_4: PASSED
+2_5: PASSED
+2_6: PASSED
+2_7: PASSED
+
+3_1: PASSED
+3_2: PASSED
+3_3: PASSED
+3_4: PASSED
+3_5: PASSED
+3_6: PASSED
+3_7: PASSED
+
+4_1: PASSED
+4_2: PASSED
+4_3: PASSED
+4_4: PASSED
+4_5: PASSED
+4_6: PASSED
+4_7: PASSED
+</code></pre></article></body></html>
