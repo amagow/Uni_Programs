@@ -1,0 +1,1 @@
+{"user_array":[{"Email":"admin@cs.hku.hk","hash_password":"2888eb56607c9c69d392fa5cee7525223e5b36c41ac189894b6ef51996d882c96583b5dc27b23e15e244b8834c25d326c98e61d9b4992daa6beebf45e0ef","Full Name":"Administrator","Phone number":12345678,"Last Login Date":"2019-05-03","Account locked":false,"Fail count":0,"username":"administrator"}]}
